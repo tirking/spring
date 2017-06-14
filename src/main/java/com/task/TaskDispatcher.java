@@ -26,12 +26,12 @@ public class TaskDispatcher {
 		System.setProperty("confLocation", confPath);
 
 		// 加载scheduled.properties
-		Properties scheduledProp = new Properties();
-		scheduledProp.load(new InputStreamReader(new FileInputStream(confPath + "/conf/scheduled.properties"),
-				Charset.forName("utf-8")));
+//		Properties scheduledProp = new Properties();
+//		scheduledProp.load(new InputStreamReader(new FileInputStream(confPath + "/conf/scheduled.properties"),
+//				Charset.forName("utf-8")));
 
 		SpringApplication app = new SpringApplication(TaskDispatcher.class);
-		app.setDefaultProperties(scheduledProp);
+//		app.setDefaultProperties(scheduledProp);
 		app.run(args);
 	}
 

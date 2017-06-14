@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Task2 {
 
-	@Scheduled(cron = "0,2,4,6 * * * * *")
+//	@Scheduled(cron = "0,2,4,6 * * * * *")
 	public void run() {
 		try {
 			System.out.println(this.getClass().getSimpleName() + " start "
